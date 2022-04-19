@@ -1,4 +1,5 @@
     <?php include __DIR__ . "/config/router.php";  ?>
+    <?php include __DIR__ . "/config/utility.php";  ?>
 
     <!doctype html>
     <html lang="en">
