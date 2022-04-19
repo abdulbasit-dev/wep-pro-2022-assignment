@@ -32,10 +32,10 @@
             <p>$array2 = array("a", "b", "color" => "green", "shape" => "trapezoid", 4);</p>
             <?php $array1 = array("color" => "red", 2, 4); ?>
             <?php $array2 = array("a", "b", "color" => "green", "shape" => "trapezoid", 4); ?>
-            <p><strong class="text-primary">Input:</strong> print_r(array_merge($array1, $array2)); </p>
+            <p><strong class="text-primary">Input:</strong> dump(array_merge($array1, $array2)); </p>
             <p><strong class="text-success">Output:</strong> <?php
                                                                 $result = array_merge($array1, $array2);
-                                                                print_r($result);
+                                                                dump($result);
                                                                 ?></p>
         </div>
     </div>
@@ -46,8 +46,8 @@
             <p><strong>Description:</strong> <span class="text-muted">array_keys — Return all the keys or a subset of the keys of an array</span></p>
             <p> $array = array(0 => 100, "color" => "red"); </p>
             <?php $array = array(0 => 100, "color" => "red"); ?>
-            <p><strong class="text-primary">Input:</strong> print_r(array_keys($array)); </p>
-            <p><strong class="text-success">Output:</strong> <?php print_r(array_keys($array)); ?></p>
+            <p><strong class="text-primary">Input:</strong> dump(array_keys($array)); </p>
+            <p><strong class="text-success">Output:</strong> <?php dump(array_keys($array)); ?></p>
         </div>
     </div>
 </div>
@@ -75,8 +75,8 @@
             $stack = array("orange", "banana", "apple", "raspberry");
             $fruit = array_shift($stack);
             ?>
-            <p><strong class="text-primary">Input:</strong> print_r($stack); </p>
-            <p><strong class="text-success">Output:</strong> <?php print_r($stack); ?></p>
+            <p><strong class="text-primary">Input:</strong> dump($stack); </p>
+            <p><strong class="text-success">Output:</strong> <?php dump($stack); ?></p>
         </div>
     </div>
 </div>
@@ -89,9 +89,9 @@
             <p><strong>Description:</strong> <span class="text-muted">array_push — Push one or more elements onto the end of array</span></p>
             <p>$stackPush = array("orange", "banana"); </p>
             <?php $stackPush = array("orange", "banana"); ?>
-            <p><strong class="text-primary">Input:</strong> print_r(array_push($stack, "apple", "raspberry")); </p>
+            <p><strong class="text-primary">Input:</strong> dump(array_push($stack, "apple", "raspberry")); </p>
             <p><strong class="text-success">Output:</strong> <?php array_push($stackPush, "apple", "raspberry");
-                                                                print_r($stackPush) ?></p>
+                                                                dump($stackPush) ?></p>
         </div>
     </div>
 
@@ -101,9 +101,9 @@
             <p><strong>Description:</strong> <span class="text-muted">array_pop — Pop the element off the end of array</span></p>
             <p> $stackPop = array("orange", "banana", "apple", "raspberry"); </p>
             <?php $stackPop = array("orange", "banana", "apple", "raspberry"); ?>
-            <p><strong class="text-primary">Input:</strong> print_r(array_pop($stack)); </p>
+            <p><strong class="text-primary">Input:</strong> dump(array_pop($stack)); </p>
             <p><strong class="text-success">Output:</strong> <?php array_pop($stackPop);
-                                                                print_r($stackPop) ?></p>
+                                                                dump($stackPop) ?></p>
         </div>
     </div>
 </div>
@@ -116,8 +116,8 @@
             <p><strong>Description:</strong> <span class="text-muted">array_values — Return all the values of an array</span></p>
             <p>$arrayValue = array("size" => "XL", "color" => "gold");</p>
             <?php $arrayValue = array("size" => "XL", "color" => "gold"); ?>
-            <p><strong class="text-primary">Input:</strong> print_r(array_values($array) </p>
-            <p><strong class="text-success">Output:</strong> <?php print_r(array_values($arrayValue)); ?></p>
+            <p><strong class="text-primary">Input:</strong> dump(array_values($array) </p>
+            <p><strong class="text-success">Output:</strong> <?php dump(array_values($arrayValue)); ?></p>
         </div>
     </div>
 
@@ -145,8 +145,8 @@
             $a = [1, 2, 3, 4, 5];
             $b = array_map('cube', $a);
             ?>
-            <p><strong class="text-primary">Input:</strong> print_r($b) </p>
-            <p><strong class="text-success">Output:</strong> <?php print_r($b) ?></p>
+            <p><strong class="text-primary">Input:</strong> dump($b) </p>
+            <p><strong class="text-success">Output:</strong> <?php dump($b) ?></p>
         </div>
     </div>
 </div>
@@ -159,8 +159,8 @@
             <p><strong>Description:</strong> <span class="text-muted">array_slice — Extract a slice of the array</span></p>
             <p> $inputSlice = array("a", "b", "c", "d", "e");</p>
             <?php $inputSlice = array("a", "b", "c", "d", "e"); ?>
-            <p><strong class="text-primary">Input:</strong> print_r(array_slice($inputSlice, 2)) </p>
-            <p><strong class="text-success">Output:</strong> <?php print_r(array_slice($inputSlice, 2)) ?></p>
+            <p><strong class="text-primary">Input:</strong> dump(array_slice($inputSlice, 2)) </p>
+            <p><strong class="text-success">Output:</strong> <?php dump(array_slice($inputSlice, 2)) ?></p>
         </div>
     </div>
 
@@ -172,8 +172,8 @@
             <?php $queue = array("orange", "banana");
             array_unshift($queue, "apple", "raspberry");
             ?>
-            <p><strong class="text-primary">Input:</strong> print_r(array_unshift($queue, "apple", "raspberry")); </p>
-            <p><strong class="text-success">Output:</strong> <?php print_r($queue) ?></p>
+            <p><strong class="text-primary">Input:</strong> dump(array_unshift($queue, "apple", "raspberry")); </p>
+            <p><strong class="text-success">Output:</strong> <?php dump($queue) ?></p>
         </div>
     </div>
 </div>

@@ -33,3 +33,8 @@ function render_table($array)
     echo '</tbody>';
     echo "</table>";
 }
+
+function dump($array)
+{
+   return  "<pre>" . print_r($array) . "</pre>";
+}
