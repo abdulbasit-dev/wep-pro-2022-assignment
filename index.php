@@ -26,10 +26,14 @@
                 global $routes;
                 $base = $_SERVER['REQUEST_URI'];
 
+                
+
                 // get index.phg page 
                 $page = explode('/', $base)[2];
 
-                if ($page == "index.php") {
+                // print_r(explode('/', $base));
+                // echo $page;
+                if ($page == "index.php" || $page == null ) {
                     header("Location:index.php?p=contacts");
                 }
 
